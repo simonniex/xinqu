@@ -1,0 +1,21 @@
+buildscript {
+
+    repositories {
+        google()
+        mavenCentral()
+
+    }
+
+    dependencies {
+
+        classpath Dependencies.hiltAgp
+        classpath 'org.jetbrains.kotlin:kotlin-serialization:1.7.0'
+
+    }
+}
+
+plugins{
+    id "com.google.dagger.hilt.android" version "2.42" apply false
+}
+
+

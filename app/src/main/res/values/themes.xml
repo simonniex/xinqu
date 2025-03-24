@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Softcup" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/tM</item>
+    </style>
+</resources>

@@ -1,0 +1,17 @@
+plugins {
+    id 'org.gradle.kotlin.kotlin-dsl' version '2.3.3'
+}
+
+repositories {
+    google()
+    mavenCentral()
+    flatDir {
+        dirs 'libs' // 这里的'libs'应替换为你存放.jar和.pom文件的实际目录
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.0"
+    implementation "com.android.tools.build:gradle:7.4.2"
+    implementation(name: 'javax.inject-1', ext: 'jar')
+}

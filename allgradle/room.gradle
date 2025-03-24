@@ -1,0 +1,19 @@
+// 在 build.gradle 文件的顶层定义方法
+def addImplementation = { dependency -> dependencies.add("implementation", dependency) }
+def addKapt = { dependency -> dependencies.add("kapt", dependency) }
+//def addApi = {dependency ->dependencies.gradleApi("api",dependency)}
+def addRoomDependencies = {
+    addImplementation(Dependencies.roomKtx)
+    addImplementation(Dependencies.roomRuntime)
+    addKapt(Dependencies.roomCompiler)
+}
+
+// 在 dependencies 闭包中调用方法
+dependencies {
+    addImplementation(Dependencies.roomKtx)
+    addImplementation(Dependencies.roomRuntime)
+    addKapt(Dependencies.roomCompiler)
+
+    // 或者调用 addRoomDependencies 方法
+    addRoomDependencies()
+}

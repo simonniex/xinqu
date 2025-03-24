@@ -1,0 +1,23 @@
+def addImplementation = { dependency -> dependencies.add("implementation", dependency) }
+def addKtorDependencies = {
+    addImplementation(Dependencies.kcc)
+    addImplementation(Dependencies.kcj)
+    addImplementation(Dependencies.kcl)
+    addImplementation(Dependencies.kcs)
+    addImplementation(Dependencies.kcsj)
+    addImplementation(Dependencies.kcw)
+    addImplementation(Dependencies.kio)
+
+}
+
+dependencies {
+    addImplementation(Dependencies.kcc)
+    addImplementation(Dependencies.kcj)
+    addImplementation(Dependencies.kcl)
+    addImplementation(Dependencies.kcs)
+    addImplementation(Dependencies.kcsj)
+    addImplementation(Dependencies.kcw)
+    addImplementation(Dependencies.kio)
+
+    addKtorDependencies
+}

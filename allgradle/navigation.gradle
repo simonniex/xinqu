@@ -1,0 +1,21 @@
+def addImplementation = { dependency -> dependencies.add("implementation", dependency) }
+def addNavigationDependencies = {
+    addImplementation(Dependencies.navigation)
+    addImplementation(Dependencies.hiltNavigation)
+    addImplementation(Dependencies.lifecycle)
+    addImplementation(Dependencies.reflect)
+    addImplementation(Dependencies.reflection)
+    addImplementation(Dependencies.nacom)
+    addImplementation(Dependencies.narun)
+}
+
+dependencies {
+    addImplementation(Dependencies.navigation)
+    addImplementation(Dependencies.hiltNavigation)
+    addImplementation(Dependencies.lifecycle)
+    addImplementation(Dependencies.reflect)
+    addImplementation(Dependencies.reflection)
+    addImplementation(Dependencies.nacom)
+    addImplementation(Dependencies.narun)
+    addNavigationDependencies
+}

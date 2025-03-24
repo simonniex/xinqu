@@ -1,0 +1,13 @@
+def addImplementation = { dependency -> dependencies.add("implementation", dependency) }
+def addMaterial3Dependencies = {
+    addImplementation(Dependencies.material3)
+    addImplementation(Dependencies.foundation)
+    addImplementation(Dependencies.icon)
+}
+
+dependencies {
+    addImplementation(Dependencies.material3)
+    addImplementation(Dependencies.foundation)
+    addImplementation(Dependencies.icon)
+    addMaterial3Dependencies
+}

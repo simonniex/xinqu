@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 双倍填充，用于内容周围的间距 -->
+    <dimen name="double_padding">32dp</dimen>
+
+    <!-- 常规填充，用于页面之间的间距 -->
+    <dimen name="normal_padding">16dp</dimen>
+
+    <!-- 小填充，用于细小的间距 -->
+    <dimen name="small_padding">8dp</dimen>
+
+    <!-- 主页网格海报高度，用于设置图片高度 -->
+    <dimen name="home_grid_poster_height">200dp</dimen>
+</resources>

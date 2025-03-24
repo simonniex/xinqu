@@ -1,0 +1,13 @@
+def addImplementation = { dependency -> dependencies.add("implementation", dependency) }
+def addNavigationDependencies = {
+    addImplementation(Dependencies.okhttp)
+    addImplementation(Dependencies.coro)
+//    addImplementation(Dependencies.serial)
+}
+
+dependencies {
+    addImplementation(Dependencies.okhttp)
+    addImplementation(Dependencies.coro)
+//    addImplementation(Dependencies.serial)
+    addNavigationDependencies
+}

@@ -1,0 +1,20 @@
+def addImplementation = { dependency -> dependencies.add("implementation", dependency) }
+def addComposeDependencies = {
+    addImplementation(Dependencies.composeUi)
+    addImplementation(Dependencies.composeRuntime)
+    addImplementation(Dependencies.composeUiGraphics)
+    addImplementation(Dependencies.composeUiTooling)
+    addImplementation(Dependencies.composeUiToolingPreview)
+    addImplementation(Dependencies.material)
+}
+
+dependencies {
+    addImplementation(Dependencies.composeUi)
+    addImplementation(Dependencies.composeRuntime)
+    addImplementation(Dependencies.composeUiGraphics)
+    addImplementation(Dependencies.composeUiTooling)
+    addImplementation(Dependencies.composeUiToolingPreview)
+    addImplementation(Dependencies.material)
+
+    addComposeDependencies
+}
