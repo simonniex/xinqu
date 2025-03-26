@@ -1,1 +1,1 @@
-一款用JetPackCompose写的App，用到了大量高新技术，适合初学者借鉴学习
+一款用JetpackCompose写的App，用到了大量高新技术，适合初学者借鉴学习
